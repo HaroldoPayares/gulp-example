@@ -24,7 +24,7 @@ var uncss   = require('gulp-uncss');     // For deleting unused CSS rules
 var changed = require('gulp-changed');   // For only updating changed files
 var footer  = require('gulp-footer');    // For adding footer text into files
 var nodemon = require('gulp-nodemon');   // For the super cool instant refreshing server
-var bSync   = require('browsersync-');   // Syncs the place between multiple browsers for dev
+var bSync   = require('browsersync');   // Syncs the place between multiple browsers for dev
 var es      = require('event-stream');   // For working with streams rather than temp dirs
 var del     = require('del');            // For removing everything from last builds
 
