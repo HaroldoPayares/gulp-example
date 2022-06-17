@@ -146,7 +146,8 @@ gulp.task('browser-sync', ['nodemon', 'scripts', 'styles'], function () {
         files: [CONFIG.SOURCE_ROOT+'/**/*.*'],
         proxy: 'http://localhost:3000',
         port: 4000,
-        browser: ['chrome.exe']   // Default browser to open
+        browser: ['chrome.exe'],
+        open: false
     });
     gulp.watch(CONFIG.SOURCE_ROOT+'/**/*.{js,coffee}', ['scripts']);
     gulp.watch(CONFIG.SOURCE_ROOT+'/**/*.{css,less}',  ['styles']);
