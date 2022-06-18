@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha"
+    "test": "nyc --reporter=text mocha"
   },
   "dependencies": {
     "body-parser": "~1.12.0",
@@ -34,6 +34,7 @@
     "gulp-uglify": "^1.2.0",
     "gulp-uncss": "^1.0.2",
     "gulp-util": "^3.0.6",
-    "jshint-stylish": "^2.0.1"
+    "jshint-stylish": "^2.0.1",
+    "mocha-junit-reporter": "^2.0.2"
   }
 }

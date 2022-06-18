@@ -1,3 +1,10 @@
+var mocha = new Mocha({
+    reporter: 'mocha-junit-reporter',
+    reporterOptions: {
+        mochaFile: './test.xml'
+    }
+});
+
 var assert = require('assert');
 describe('Array', function () {
   describe('#indexOf()', function () {
